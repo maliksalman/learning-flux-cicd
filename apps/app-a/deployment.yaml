@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-a
+spec:
+  replicas: 3
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      tier: backend
+      app: a
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        tier: backend
+        app: a
+    spec:
+      containers:
+      - name: main
+        image: nginx
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 50m
+            memory: 32Mi
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        lifecycle:
+          postStart:
+            exec:
+              command:
+              - sh
+              - -cx
+              - |
+                echo "{\"host\":\"$HOSTNAME\", \"ver\":\"$APP_VER\"}" > /usr/share/nginx/html/index.html
+        env:
+        - name: APP_VER
+          value: "1.0"
