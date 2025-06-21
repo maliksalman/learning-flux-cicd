@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jump
+spec:
+  containers:
+  - name: jump
+    image: maliksalman/jump
+    command:
+      - sleep
+      - 168h

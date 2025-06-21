@@ -1,2 +1,3 @@
 resources:
   - app-a.yaml
+  - jump.yaml
