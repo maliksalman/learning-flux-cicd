@@ -1,4 +1,2 @@
 resources:
-  - app-a.yaml
-  - app-b.yaml
-  - jump.yaml
+  - apps
