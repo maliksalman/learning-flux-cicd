@@ -1,6 +1,7 @@
 resources:
 - ../../common/flux-system
 - ../../common/apps
+- ../../../apps/go-hello.yaml
 
 patches:
 - patch: |-
