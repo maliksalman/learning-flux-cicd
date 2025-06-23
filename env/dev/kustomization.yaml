@@ -11,7 +11,7 @@ images:
 patches:
 - patch: |-
     - op: replace
-      path: /spec/replaicas
+      path: /spec/replicas
       value: 1
   target:
     kind: Deployment
