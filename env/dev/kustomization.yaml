@@ -1,0 +1,9 @@
+resources:
+  - ../../apps/app-a.yaml
+  - ../../apps/app-b.yaml
+  - ../../apps/jump.yaml
+  - ../../apps/go-hello.yaml
+
+images:
+- name: maliksalman/jump
+  newTag: v1.2

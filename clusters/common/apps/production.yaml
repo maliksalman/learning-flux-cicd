@@ -1,11 +1,11 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: app-b
+  name: dev-apps
   namespace: apps
 spec:
   interval: 1m0s
-  path: ./apps/app-b
+  path: ./env/production
   prune: true
   targetNamespace: apps
   sourceRef:

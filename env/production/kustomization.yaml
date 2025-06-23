@@ -1,0 +1,4 @@
+resources:
+  - ../../apps/app-a.yaml
+  - ../../apps/app-b.yaml
+  - ../../apps/jump.yaml

@@ -1,5 +1,0 @@
-resources:
-  - apps-ns.yaml
-  - app-a.yaml
-  - app-b.yaml
-  - jump.yaml
