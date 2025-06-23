@@ -1,4 +1,4 @@
 resources:
-  - ../../apps/app-a.yaml
-  - ../../apps/app-b.yaml
-  - ../../apps/jump.yaml
+  - ../../apps/app-a
+  - ../../apps/app-b
+  - ../../apps/jump
