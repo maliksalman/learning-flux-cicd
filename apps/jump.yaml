@@ -1,11 +1,11 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: app-a
+  name: jump
   namespace: apps
 spec:
   interval: 1m0s
-  path: ./apps/app-a
+  path: ./jump
   prune: true
   targetNamespace: apps
   sourceRef:

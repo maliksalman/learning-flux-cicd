@@ -1,0 +1,16 @@
+resources:
+- ../../common/flux-system
+- ../../common/apps
+
+patches:
+- patch: |-
+    - op: replace
+      path: /spec/path
+      value: ./clusters/kind-qa
+  target:
+    kind: Kustomization
+    name: flux-system
+
+images:
+- name: maliksalman/jump
+  newTag: v1.2
