@@ -5,7 +5,7 @@ metadata:
   namespace: apps
 spec:
   interval: 1m0s
-  path: ./app-a
+  path: ./apps/app-a
   prune: true
   targetNamespace: apps
   sourceRef:
