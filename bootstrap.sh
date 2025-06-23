@@ -2,8 +2,8 @@
 
 CLUSTER_NAME=$1
 if [[ -z $CLUSTER_NAME || ! -d clusters/${CLUSTER_NAME}/flux-system ]]; then
+	echo "Usage: $0 {CLUSTER_NAME}"
 	echo "Error: {CLUSTER_NAME} is required and a matching clusters/{CLUSTER_NAME}/flux-system directory should exist"
-	echo "Usage: $0 {CLUSTER_NAME}
 	exit 1
 fi
 

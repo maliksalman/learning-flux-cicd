@@ -1,5 +1,5 @@
 resources:
-  - ../../../apps/apps-ns.yaml
-  - ../../../apps/app-a.yaml
-  - ../../../apps/app-b.yaml
-  - ../../../apps/jump.yaml
+  - apps-ns.yaml
+  - app-a.yaml
+  - app-b.yaml
+  - jump.yaml
