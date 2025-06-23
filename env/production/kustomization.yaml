@@ -2,3 +2,7 @@ resources:
   - ../../apps/app-a
   - ../../apps/app-b
   - ../../apps/jump
+
+images:
+- name: maliksalman/jump
+  newTag: v1.3

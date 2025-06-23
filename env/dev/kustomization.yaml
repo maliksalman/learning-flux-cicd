@@ -7,3 +7,11 @@ resources:
 images:
 - name: maliksalman/jump
   newTag: v1.2
+
+patches:
+- patch: |-
+    - op: replace
+      path: /spec/replaicas
+      value: 1
+  target:
+    kind: Deployment
