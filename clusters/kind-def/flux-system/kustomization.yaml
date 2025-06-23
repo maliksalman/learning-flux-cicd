@@ -1,6 +1,6 @@
 resources:
 - ../../common/flux-system
-- ../../common/apps/production.yaml
+- ../../common/apps-production
 
 patches:
 - patch: |-

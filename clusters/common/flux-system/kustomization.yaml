@@ -1,4 +1,3 @@
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
-- apps-ns.yaml
